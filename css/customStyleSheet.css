@@ -1,0 +1,321 @@
+/* Custom CSS additions to Bootstrap */
+
+
+.base {
+	font-family: 'Museo-300', serif;
+	font-size: 18px;
+}
+
+ #header {
+	position: static;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	padding: 0;
+	z-index: 9999;
+}
+
+.nav {
+	padding: inherit;
+	list-style: none;
+}
+
+.navbar {
+  position: fixed;	
+  top: 0;
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 0px;
+  background: #fff;
+  border: 1px solid transparent;
+  z-index: 9999;
+  border-radius: 0;
+}
+
+.content {
+	/* position: relative; */
+	height: 70px;
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1170px;
+}
+
+.navbar-brand {
+	height: 70px;
+	line-height: 35px;
+	font-size: 24px;
+}
+
+.navbar-default .navbar-brand {
+  color: #428bca;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #428bca;
+}
+
+.navbar-nav {
+	margin: 7.5px -15px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #5cb85c;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #5cb85c;
+  background-color: #e7e7e7;
+}
+
+.main-content {
+	clear: both;    /* necessary? */
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+}
+
+#home-img-section {
+	height: 0;
+	text-align: center;
+	margin: 0;
+	padding-top: 16.559%;
+	padding-bottom: 19.2%;
+	background-image: url(../assets/images/home/example.jpg);
+	background-position: center top;
+	background-size: 100%;
+	position: relative;
+}
+
+#home-img-section h1 {
+	font-size: 48px;
+	font-weight: normal;
+	color: white;
+}
+
+#slogan {
+	position: relative;
+	top: -155px;
+}
+
+.btn-xlg,
+.btn-group-xlg > .btn {
+  padding: 15px 30px;
+  font-size: 27px;
+  line-height: 1.33;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.main-btns {
+	padding-top: 75px;
+}
+
+.more-btns {
+	font-weight: bold;
+}
+
+.more-btns:hover {
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+}
+
+.modal-btn {
+	font-size: 18px;
+}
+
+.modal-btn2:hover {
+	background-color: #5cb85c;
+	border-color: #5cb85c;
+}
+
+.home-info {
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	background-color: #ebeeed;
+}
+
+.home-info-text {
+	margin-bottom: 35px;
+}
+
+#myModalLabel {
+	color: #5cb85c;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* Start the box and animation CSS */
+.media {
+	background: #fff;
+	border-bottom: solid 1px #c7c9c8;
+	margin-bottom: 30px;
+}
+
+.media a {
+	overflow: hidden;
+}
+
+.media-img {
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+
+.media-img .img-overlay {
+	background: #363635;
+	background: rgba(0,0,0, 0.4);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-top: 50%;
+	text-align: center;
+	z-index: 4;
+	-webkit-transition: opacity 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: opacity 0.3s ease-out;  /* Firefox 4-15 */
+	-o-transition: opacity 0.3s ease-out;  /* Opera 10.50â€“12.00 */
+	transition: opacity 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lt-ie9 .media-img .img-overlay {
+	filter: alpha(opacity=70);
+}
+
+.media .img-overlay a {
+	display: none;
+	position: relative;
+	margin-top: -24px;
+}
+
+.media:hover .img-overlay a,
+.media .img-overlay:hover a {
+	display: inline-block;
+}
+
+.media .img-overlay h3 {
+	color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -40px;
+}
+
+.media:hover .img-overlay,
+.media .media-img:hover .img-overlay {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+	-moz-transition: opacity 0.3s ease-out;  /* Firefox 4-15 */
+	-o-transition: opacity 0.3s ease-out;  /* Opera 10.50â€“12.00 */
+	transition: opacity 0.3s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.media p {
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.media a:hover {
+	text-decoration: none;
+}
+
+.media-body {
+	padding: 20px 30px 10px 35px;
+}
+
+.media div.pull-left {
+	overflow: hidden;
+	margin-right: -15px;
+	margin-left: 14px;
+}
+
+.media div.media-img img {
+	-webkit-transform: scale(1, 1);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 2000ms;
+	-moz-transform: scale(1, 1);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 2000ms;
+	transform: scale(1, 1);
+	transition-timing-function: ease-out;
+	transition-duration: 2000ms;
+	width: 100%;
+	height: auto;
+}
+
+.media:hover div.media-img img {
+	-webkit-transform: scale(1.15, 1.15);
+	-webkit-transition-timing-function: ease-out;
+	-webkit-transition-duration: 1500ms;
+	-moz-transform: scale(1.15, 1.15);
+	-moz-transition-timing-function: ease-out;
+	-moz-transition-duration: 1500ms;
+	transform: scale(1.15, 1.15);
+	transition-timing-function: ease-out;
+	transition-duration: 1500ms;
+	position: relative;
+	z-index: 3;
+}
+
+.media .media-testo {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+/* End the box and animation CSS */
+
+.footer {
+	margin-bottom: 0;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background: #fff;
+	color: #ccc;
+	text-align: center;
+	font-size: 15px;
+	z-index: 51;
+	position: relative;
+}
+
+.container-top {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15px;
+
+}
+
+.footer a {
+	color: #777;
+}
+
+.footer .brandlink:hover {
+	text-decoration: none;
+	color: #5cb85c;
+}
+
+.footer .brandlink {
+	font-size: 24px;
+	color: #428bca;
+	padding-right: 15px;
+	text-decoration: none;
+}
+
+.footer img {
+	vertical-align: bottom;
+}
+
+a:hover {
+	color: #5cb85c;
+	text-decoration: none;
+}
+
+
